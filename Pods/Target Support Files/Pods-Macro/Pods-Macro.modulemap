@@ -1,0 +1,6 @@
+framework module Pods_Macro {
+  umbrella header "Pods-Macro-umbrella.h"
+
+  export *
+  module * { export * }
+}

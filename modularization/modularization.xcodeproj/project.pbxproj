@@ -7,18 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84A0E21F22D5298E003C4CCC /* Macro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A0E21E22D5298E003C4CCC /* Macro.framework */; };
+		84A0E22022D5298E003C4CCC /* Macro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84A0E21E22D5298E003C4CCC /* Macro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84A0E22222D5298E003C4CCC /* TestView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A0E22122D5298E003C4CCC /* TestView.framework */; };
+		84A0E22322D5298E003C4CCC /* TestView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84A0E22122D5298E003C4CCC /* TestView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84FC2C6022D516BC0081498A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC2C5F22D516BC0081498A /* AppDelegate.m */; };
 		84FC2C6322D516BC0081498A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC2C6222D516BC0081498A /* ViewController.m */; };
 		84FC2C6622D516BC0081498A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FC2C6422D516BC0081498A /* Main.storyboard */; };
 		84FC2C6822D516BD0081498A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FC2C6722D516BD0081498A /* Assets.xcassets */; };
 		84FC2C6B22D516BD0081498A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FC2C6922D516BD0081498A /* LaunchScreen.storyboard */; };
 		84FC2C6E22D516BD0081498A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FC2C6D22D516BD0081498A /* main.m */; };
+		84FC2CBA22D51E8C0081498A /* MODULES in Resources */ = {isa = PBXBuildFile; fileRef = 84FC2CB922D51E8C0081498A /* MODULES */; };
 		D5137A42C6AEE2E1F0D4C281 /* Pods_modularization.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68869ADAC2A52825C9B8AD7 /* Pods_modularization.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84A0E21D22D5295F003C4CCC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84A0E22022D5298E003C4CCC /* Macro.framework in Embed Frameworks */,
+				84A0E22322D5298E003C4CCC /* TestView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		121501DFE4DB41462E35F11B /* Pods-modularization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modularization.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-modularization/Pods-modularization.debug.xcconfig"; sourceTree = "<group>"; };
 		490B0E6E6AC419987675606C /* Pods-modularization.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modularization.release.xcconfig"; path = "../Pods/Target Support Files/Pods-modularization/Pods-modularization.release.xcconfig"; sourceTree = "<group>"; };
+		84A0E21E22D5298E003C4CCC /* Macro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Macro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A0E22122D5298E003C4CCC /* TestView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TestView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FC2C5B22D516BC0081498A /* modularization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = modularization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FC2C5E22D516BC0081498A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84FC2C5F22D516BC0081498A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +51,7 @@
 		84FC2C6A22D516BD0081498A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84FC2C6C22D516BD0081498A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84FC2C6D22D516BD0081498A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84FC2CB922D51E8C0081498A /* MODULES */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MODULES; path = ../../MODULES; sourceTree = "<group>"; };
 		A68869ADAC2A52825C9B8AD7 /* Pods_modularization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_modularization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -38,6 +61,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5137A42C6AEE2E1F0D4C281 /* Pods_modularization.framework in Frameworks */,
+				84A0E21F22D5298E003C4CCC /* Macro.framework in Frameworks */,
+				84A0E22222D5298E003C4CCC /* TestView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +89,8 @@
 		84FC2C5222D516BC0081498A = {
 			isa = PBXGroup;
 			children = (
+				84A0E22122D5298E003C4CCC /* TestView.framework */,
+				84A0E21E22D5298E003C4CCC /* Macro.framework */,
 				84FC2C5D22D516BC0081498A /* modularization */,
 				84FC2C5C22D516BC0081498A /* Products */,
 				073A75B9F0C90F03BC56E360 /* Pods */,
@@ -82,6 +109,7 @@
 		84FC2C5D22D516BC0081498A /* modularization */ = {
 			isa = PBXGroup;
 			children = (
+				84FC2CB922D51E8C0081498A /* MODULES */,
 				84FC2C5E22D516BC0081498A /* AppDelegate.h */,
 				84FC2C5F22D516BC0081498A /* AppDelegate.m */,
 				84FC2C6122D516BC0081498A /* ViewController.h */,
@@ -107,6 +135,7 @@
 				84FC2C5822D516BC0081498A /* Frameworks */,
 				84FC2C5922D516BC0081498A /* Resources */,
 				E22CBCDE6D2BAB1A93C929D8 /* [CP] Embed Pods Frameworks */,
+				84A0E21D22D5295F003C4CCC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FC2CBA22D51E8C0081498A /* MODULES in Resources */,
 				84FC2C6B22D516BD0081498A /* LaunchScreen.storyboard in Resources */,
 				84FC2C6822D516BD0081498A /* Assets.xcassets in Resources */,
 				84FC2C6622D516BC0081498A /* Main.storyboard in Resources */,
