@@ -1,0 +1,6 @@
+framework module Pods_modularization_swift {
+  umbrella header "Pods-modularization_swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
